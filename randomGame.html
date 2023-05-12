@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script>
+    function randomGame() { 
+        let counter = 0;
+        let id = setInterval( () => {
+            counter++;
+            let randNum = Math.random();
+            if (randNum > 0.75) {
+                clearTimeout(id);
+                console.log(counter);
+            }
+        }, 1000)
+    }
+    randomGame();
+</script>
+</body>
+</html>
